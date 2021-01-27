@@ -1,0 +1,270 @@
+body{
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    background: #F9FAFF;
+}
+
+.container{
+    min-height: 100%;
+    height:auto !important;
+}
+
+.top-section{
+    z-index: 1;
+    min-height: 30rem !important;
+    height: 60% !important;
+    background-color: #F1F5FE;
+    border-bottom-left-radius: 50% 50%;
+}
+
+
+.circles-bg{
+    position:absolute;
+    z-index: 2;
+    background-image: url("./images/pattern-circles.svg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size:75%;
+    background-repeat: no-repeat;
+    top: 6%;
+    left: 25%;
+    width: 230px;
+    height: 195px;
+    max-height: 195px;
+    max-width: 230px;
+}
+
+
+.text-top{
+    
+    z-index: 3;
+    margin-top:7rem;
+    margin-left:auto;
+    margin-right:auto;
+    display: grid;
+    justify-items: center;
+}
+
+h2{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.title-strong{
+    color: #253154;
+}
+
+.sub-title{
+    color: #848AA4 ;
+    margin-top: 0.3rem;
+    font-weight: 600;
+}
+
+.card-wrapper{
+    position: absolute !important;
+    left: 50%;
+    top: 29%;
+    width: 85%;
+    height: 58%;
+    min-height: 50%;  
+    z-index: 2;
+}
+
+.bottom-card{
+
+    color:#848AA4;
+    left: -50%;
+    margin: 0 auto;
+     
+    box-shadow: 5px 5px 5px #EFF0F5;
+    border-color: white;
+    
+}
+
+.bottom-card .upper-card {
+    min-height: 19rem;
+}
+
+.pageviews{
+    text-transform: uppercase;
+    margin-top:0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+    font-size: 13px;
+}
+
+.custom-range{
+    /* check the input-range.css file for its specifics */
+    padding: 2rem !important;
+}
+
+.price-text .price{
+    color: #253154;
+    font-size: 2.1rem;
+    font-weight: 800;
+}
+.price-text .month{
+    padding-left: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.billing {
+    font-weight: 600;
+    font-size:0.9rem;
+    padding-top: 3rem;
+}
+.billing div{
+    white-space: nowrap;
+}
+
+.billing input[type="checkbox"]{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.toggle-round{
+    width: 52px;
+    position: relative;
+    height: 26px;
+    border-radius: 30px;
+    background: #D0D8EF;
+    left:0;
+    right:0;
+    bottom:20px;
+    transition: .4s;
+    -webkit-transition: .4s;
+}
+
+.toggle-round:before{
+    content: " ";
+    border-radius: 45%;
+    background-color: white;
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    left: 10%;
+    top: 16%;
+    transition: .4s;
+    -webkit-transition: .4s;
+}
+
+
+input:checked + .toggle-round {
+    background-color: #11D8C5;
+}
+  
+input:focus + .toggle-round {
+    box-shadow: 0 0 1px #11D8C5;
+}
+
+input:checked + .toggle-round:before {
+    -webkit-transform: translateX(25px);
+    -ms-transform: translateX(25px);
+    transform: translateX(25px);
+}
+
+.disappearing-discount{
+    display:none;
+}
+.discount{
+    color: #E48E72;
+    background-color: #FFECE8;
+    border-radius: 30%;
+    font-size: 11px;
+    font-weight: 800;
+    height: 1.3rem;
+    width: 3rem;
+}
+.center-text{
+    text-align: center;
+}
+
+.checkmark{
+    height: 0.6rem;
+    padding-right: 2rem;;
+}
+
+.claim{
+    padding-bottom: 1rem;   
+}
+
+.claim:last-of-type{
+    padding-bottom: 2rem;
+}
+
+.bottom-card .bottom-section {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: -1rem;
+}
+
+.btn-darkblue{
+    color:#BBC8FC !important;
+    background-color: #293356 !important;
+    font-size: 0.85rem !important;
+    font-weight: 800;
+    width: 12rem;
+    height: 2.9rem;
+    margin-top: -2rem !important;
+    /* margin: 0 auto; */
+    margin-bottom: 3rem !important;
+}
+
+.btn-darkblue:hover{
+    color: white !important;
+}
+
+
+@media screen and (min-width: 600px) {
+    .container{
+        width: 100%;
+        max-width: 100%;
+    }
+    .circles-bg{
+        left:50% ;
+        margin-left: -115px;
+    }
+    .card{
+        width:100%;
+        max-width: 430px;
+        margin: 0 auto !important;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    
+    .card{
+        max-width: 575px;
+        width: 575px;
+        margin: 0 auto !important;
+    }
+    .disappearing-discount{
+        display:inline-block;
+    }
+    .discount{
+        max-width: auto;
+        width: auto;
+        border-radius: 30%;
+        padding: 0 0.5rem;
+    }
+
+    .upper-card{
+        min-height: 5rem !important;
+    }
+    
+    input[type=checkbox] {
+        -webkit-appearance: none; 
+        opacity: 0;
+    }
+    
+    .pl-5-plus{
+        padding-left: 5rem !important;
+    }
+
+    .btn-darkblue{
+        margin-top: 3.5rem !important;
+        
+    }
+
+}

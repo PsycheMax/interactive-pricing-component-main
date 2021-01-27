@@ -1,0 +1,102 @@
+input[type=range] {
+    -webkit-appearance: none; 
+    width: 100%;
+    background: transparent; 
+    transition: ease-out 1s;
+}
+
+input[type=range]:focus {
+    outline: none; 
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    cursor: pointer;
+    background: transparent; 
+    border-color: transparent;
+    color: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;    
+    background: url("./images/icon-slider.svg");
+    background-origin:border-box;
+    background-position: 50% 52%;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    height: 46px;
+    width: 46px;
+    border: none;
+    position:relative;
+    top:-1rem;
+    background-color: #11D8C5;
+    border-radius: 100%;
+    box-shadow: 0 1rem 2.2rem 0em #11D8C5;
+}
+input[type=range]::-webkit-slider-runnable-track{
+    background: #F1F5FE;
+    border-radius: 30px;
+    height: 10px;
+}
+input[type=range]::-webkit-progress-value{
+    background: #A5F3EA;
+    border-radius: 30px;
+    height: 10px;
+}
+input[type=range]::-moz-range-track{
+    background: #F1F5FE;
+    border-radius: 30px;
+    height: 10px;
+}
+input[type=range]::-moz-range-progress{
+    background: #A5F3EA;
+    border-radius: 30px;
+    height: 10px;
+}
+input[type=range]::-moz-range-thumb{
+    background: url("./images/icon-slider.svg");
+    background-origin:border-box;
+    background-position: 50% 52%;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    height: 46px;
+    width: 46px;
+    border: none;
+    background-color: #11D8C5;
+    border-radius: 100%;
+    box-shadow: 0 1rem 2.2rem 0em #11D8C5;
+}
+input[type=range]::-ms-fill-lower{
+    background: #F1F5FE;
+    border-radius: 30px;
+    height: 10px;
+}
+input[type=range]::-ms-fill-upper{
+    background: #A5F3EA;
+    border-radius: 30px;
+    height: 10px;
+}
+input[type=range]::-ms-thumb{
+    background: url("./images/icon-slider.svg");
+    background-origin:border-box;
+    background-position: 50% 52%;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    height: 46px;
+    width: 46px;
+    border: none;
+    background-color: #11D8C5;
+    border-radius: 100%;
+    box-shadow: 0 1rem 2.2rem 0em #11D8C5;
+}
+
+input[type=range]::-ms-thumb:hover{
+    background-color: #0ECAB8;
+}
+input[type=range]::-moz-range-thumb:hover{
+    background-color: #0ECAB8;
+   
+}
+input[type=range]::-webkit-slider-thumb:hover{
+    background-color: #0ECAB8;
+}
